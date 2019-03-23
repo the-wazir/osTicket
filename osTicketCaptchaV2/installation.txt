@@ -1,0 +1,35 @@
+This is a direct drop-in replacement for the default osTicket captcha system which generates a user configurable random Captcha.
+
+You can customise the following:
+
+* You can specify the font face with a file (default is arial.ttf)
+* You can specify the font size (default is 18, which seems optimal to me - should be changed from /captch.php where class is invoked)
+* Characters can be rendered in colour or grayscale
+* Background can be generated from random colour or random grayscale pixels
+* Characters can be generated in fixed or random colour/random grayscale
+* You can set the upper and lower RGB/grayscale intensity for the background pixels, to adjust contrast between background and text
+* You can customise pixel size for the randomly generated background (default is 6x6 pixel squares)
+* You can set (or disable with 0) a random rotation range for characters
+* You can adjust the margin for the character cells/random character placement routines
+
+This generator uses a font file (arial.ttf is included in this zip) and can be installed simply by extracting the contents
+of the upload folder to the root of your osTicket installation.  Because this will overwrite the existing file at:
+/include/class.captcha.php  I have included a file named class.captcha.original.php which contains the original (v1.11) php code,
+this is also available from: https://github.com/osTicket/osTicket/blob/develop/include/class.captcha.php
+
+These modifications have been made to the original files of a clean osTicket v1.11 installation.  Looking at the files dating
+back to osTicket v1.7 the default Captcha system appears to be unchanged, so whilst I make no guarantees - I belive this solution
+will work for older versions as it stands.
+
+Once it is installed, you can test it by accessing https://yourosticketsite/captcha.php where you can refresh to keep generating
+new codes - useful for testing it whilst tweaking the settings.
+
+I will be creating a full manageable plugin soon which adds the functionality of this solution and also Google ReCaptcha.
+I am distributing this free but if you fancy saying thanks and buying me a drink, you can PayPal me at: buysimonadrink@outlook.com
+or here: https://paypal.me/buySimonaDrink
+
+I hope you find this useful!
+
+Cheers,
+
+Simon.

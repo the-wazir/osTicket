@@ -1,4 +1,4 @@
-#Better Captcha for osTicket
+# Better Captcha for osTicket
 
 This is a direct drop-in replacement for the default osTicket captcha system which generates a user configurable random Captcha.
 

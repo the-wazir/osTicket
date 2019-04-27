@@ -6,6 +6,9 @@
 
 	By Simon Pittock, (c)2019 Clickteam LLC
 	http://www.clickteam.com
+	
+	Please note this is free software and is not supported at Clickteam - if you have any issues, please
+	raise them here on GitHub under Issues - thanks!
 
 	This will not work without uploading the relevant font file (eg. default is arial.ttf) to the directory indicated in $opts['fontPath']
 	You can find a compact (304k) version of arial.ttf here:
